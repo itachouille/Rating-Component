@@ -1,0 +1,82 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7b62ff;
+  font-family: Montserrat, sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: red 2px solid;
+  width: 353px;
+  height: 326px;
+  border: #e0e0e0 1px solid;
+  border-radius: 10px;
+  padding: 24px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.replay-container {
+  display: flex;
+  justify-content: end;
+}
+
+.replay-btn {
+  cursor: pointer;
+}
+
+.wrapper-stars {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rating-star {
+  font-size: 3rem;
+  transition: all 0.2s ease;
+  color: #ffa962;
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star {
+  color: #0cbd12e8;
+}
+
+.active {
+  color: #0cbd12e8;
+  text-shadow: 0 0 20px #0cbd12e8;
+}
