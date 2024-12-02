@@ -80,7 +80,7 @@ p {
   justify-content: space-around;
 }
 
-.rating-star {
+/* .rating-star {
   font-size: 3rem;
   transition: all 0.2s ease;
   color: #ffa962;
@@ -94,4 +94,19 @@ p {
 .active {
   color: #0cbd12e8;
   text-shadow: 0 0 20px #0cbd12e8;
+} */
+
+.rating-star {
+  width: 50px; /* Ajuste selon tes besoins */
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Optionnel : effet visuel */
+}
+
+.rating-star.hovered {
+  transform: scale(1.1); /* Agrandissement au hover (optionnel) */
+}
+
+.rating-star.active {
+  transform: scale(1.2); /* Agrandissement pour les étoiles actives */
 }
