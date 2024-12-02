@@ -37,6 +37,17 @@ p {
   line-height: 150%;
 }
 
+ul {
+  padding-top: 1rem;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 200%;
+}
+
 #rating-card {
   display: flex;
   flex-direction: column;
@@ -55,8 +66,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 706px;
-  height: 353px;
+  width: 353px;
   border: #e0e0e0 1px solid;
   border-radius: 10px;
   padding: 24px;
@@ -74,39 +84,16 @@ p {
   cursor: pointer;
 }
 
+.replay-btn:hover {
+  content: url("./assets/replay_hover.svg");
+}
+
 .wrapper-stars {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-/* .rating-star {
-  font-size: 3rem;
-  transition: all 0.2s ease;
-  color: #ffa962;
-  cursor: pointer;
-}
-
-.rating-star.hovered {
-  color: #0cbd12e8;
-}
-
-.active {
-  color: #0cbd12e8;
-  text-shadow: 0 0 20px #0cbd12e8;
-} */
-
 .rating-star {
-  width: 50px; /* Ajuste selon tes besoins */
-  height: 50px;
   cursor: pointer;
-  transition: transform 0.2s ease; /* Optionnel : effet visuel */
-}
-
-.rating-star.hovered {
-  transform: scale(1.1); /* Agrandissement au hover (optionnel) */
-}
-
-.rating-star.active {
-  transform: scale(1.2); /* Agrandissement pour les étoiles actives */
 }

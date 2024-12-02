@@ -76,9 +76,7 @@ function displayHistory(history) {
   historyCard.innerHTML = "";
   history.forEach((entry, i) => {
     const listItem = document.createElement("li");
-    listItem.textContent = `Note ${i + 1}: ${entry.rating}/5 (le ${
-      entry.date
-    })`;
+    listItem.textContent = `${entry.rating}/5 (le ${entry.date})`;
     historyCard.appendChild(listItem);
   });
 }
