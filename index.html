@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <div id="card">
+    <div id="rating-card">
       <div class="replay-container">
         <img src="./assets/replay.svg" alt="replay icon" class="replay-btn" />
       </div>
@@ -32,12 +32,26 @@
         viens me dire pourquoi !
       </p>
       <div class="wrapper-stars">
-        <div class="rating-star"><i class="fa-solid fa-star"></i></div>
-        <div class="rating-star"><i class="fa-solid fa-star"></i></div>
-        <div class="rating-star"><i class="fa-solid fa-star"></i></div>
-        <div class="rating-star"><i class="fa-solid fa-star"></i></div>
-        <div class="rating-star"><i class="fa-solid fa-star"></i></div>
+        <div class="rating-star" aria-label="1 star">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="rating-star" aria-label="1 star">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="rating-star" aria-label="1 star">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="rating-star" aria-label="1 star">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="rating-star" aria-label="1 star">
+          <i class="fa-solid fa-star"></i>
+        </div>
       </div>
+    </div>
+    <div id="history-card">
+      <h2>Historique des notes</h2>
+      <ul id="history-list"></ul>
     </div>
   </body>
 

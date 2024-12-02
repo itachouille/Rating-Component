@@ -10,6 +10,9 @@ html,
 body {
   overflow-x: hidden;
   scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 body {
@@ -34,13 +37,26 @@ p {
   line-height: 150%;
 }
 
-#card {
+#rating-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: red 2px solid;
   width: 353px;
   height: 326px;
+  border: #e0e0e0 1px solid;
+  border-radius: 10px;
+  padding: 24px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#history-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 706px;
+  height: 353px;
   border: #e0e0e0 1px solid;
   border-radius: 10px;
   padding: 24px;
@@ -60,7 +76,6 @@ p {
 
 .wrapper-stars {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
 }
@@ -69,10 +84,10 @@ p {
   font-size: 3rem;
   transition: all 0.2s ease;
   color: #ffa962;
+  cursor: pointer;
 }
 
-.rating-star:hover,
-.rating-star:hover ~ .rating-star {
+.rating-star.hovered {
   color: #0cbd12e8;
 }
 
