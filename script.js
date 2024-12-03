@@ -4,11 +4,16 @@ const historyCard = document.getElementById("history-list");
 
 let lastRatingIndex = null;
 
-const starDefault = "./assets/star.png";
-const starPrevious = "./assets/star_full.png";
-const starHover = "./assets/star_hover.png";
-const starActive = "./assets/star_selected.png";
-const starUnselected = "./assets/star_not_selected.png";
+const starDefault =
+  "https://rating-component.s3.eu-west-3.amazonaws.com/assets/star.png";
+const starPrevious =
+  "https://rating-component.s3.eu-west-3.amazonaws.com/assets/star_full.png";
+const starHover =
+  "https://rating-component.s3.eu-west-3.amazonaws.com/assets/star_hover.png";
+const starActive =
+  "https://rating-component.s3.eu-west-3.amazonaws.com/assets/star_selected.png";
+const starUnselected =
+  "https://rating-component.s3.eu-west-3.amazonaws.com/assets/star_not_selected.png";
 
 function addStar() {
   stars.forEach((star, index) => {

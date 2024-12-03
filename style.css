@@ -85,7 +85,7 @@ li {
 }
 
 .replay-btn:hover {
-  content: url("./assets/replay_hover.svg");
+  content: url("https://rating-component.s3.eu-west-3.amazonaws.com/assets/replay_hover.svg");
 }
 
 .wrapper-stars {
